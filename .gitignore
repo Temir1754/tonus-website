@@ -1,0 +1,14 @@
+# Agent workflows and system files
+workflows/
+.agents/
+.agent/
+_agents/
+_agent/
+.gemini/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
