@@ -7,6 +7,24 @@
     <title>Tonus | Общественная баня и SPA в Астане</title>
     <meta name="description"
         content="Современный банный комплекс Tonus в Астане: общественная баня, приватные сауны на дровах, бассейн и профессиональный SPA-уход для вашего отдыха.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tonus.astana.kz/">
+    <meta property="og:title" content="Tonus | Общественная баня и SPA в Астане">
+    <meta property="og:description" content="Традиционные парные на дровах, чистота и гармония SPA-ритуалов в сердце столицы. Работаем 24/7.">
+    <meta property="og:image" content="./assets/og-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tonus.astana.kz/">
+    <meta property="twitter:title" content="Tonus | Общественная баня и SPA в Астане">
+    <meta property="twitter:description" content="Традиционные парные на дровах, чистота и гармония SPA-ритуалов в сердце столицы. Работаем 24/7.">
+    <meta property="twitter:image" content="./assets/og-preview.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,10 +51,19 @@
             <nav class="pill-nav">
                 <ul class="nav-links">
                     <li><a href="#studio">Комплекс</a></li>
-                    <li><a href="#experiments">Парные</a></li>
+                    <li><a href="#zones">Парные</a></li>
                     <li><a href="#pricing">Тарифы</a></li>
+                    <li><a href="#menu">Кухня & Бар</a></li>
                     <li><a href="#company">О нас</a></li>
                 </ul>
+                <div class="mobile-nav-socials hide-desktop">
+                    <a href="https://www.instagram.com/tonus_astana" target="_blank">
+                        <img src="https://api.iconify.design/ri:instagram-line.svg?color=%23333" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/77008883007?text=Здравствуйте!%20Хочу%20забронировать%20посещение%20в%20Tonus." target="_blank">
+                        <img src="https://api.iconify.design/ri:whatsapp-line.svg?color=%23333" alt="WhatsApp">
+                    </a>
+                </div>
             </nav>
             
             <div class="nav-separator"></div>
@@ -52,9 +79,17 @@
                     <img src="https://api.iconify.design/ri:phone-fill.svg?color=%23333" alt="Call">
                 </a>
             </div>
+
+            <div class="nav-separator"></div>
+
+            <div class="header-status">
+                <span class="status-dot"></span>
+                <span class="status-text">24/7</span>
+            </div>
+
         </div>
 
-        <a href="#open-studio" class="btn-pill btn-studio header-booking">
+        <a href="https://wa.me/77008883007?text=Здравствуйте!%20Хочу%20забронировать%20посещение%20в%20Tonus." target="_blank" class="btn-pill btn-studio header-booking hide-mobile">
             Забронировать <span class="arrow">→</span>
         </a>
 
@@ -86,8 +121,8 @@
 
             <div class="hero-footer-actions">
                 <div class="action-pills">
-                    <a href="#" class="btn-pill outline">Наши зоны</a>
-                    <a href="#" class="btn-pill outline">Забронировать <span class="arrow-up">↗</span></a>
+                    <a href="#zones" class="btn-pill outline">Наши зоны</a>
+                    <a href="https://wa.me/77008883007?text=Здравствуйте!%20Хочу%20забронировать%20посещение%20в%20Tonus." target="_blank" class="btn-pill outline hide-mobile">Забронировать <span class="arrow-up">↗</span></a>
                 </div>
             </div>
         </section>
@@ -145,11 +180,11 @@
             </div>
         </section>
 
-        <section class="section-bento" id="experiments">
+        <section class="section-bento" id="zones">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">01</span>
-                    <h2 class="section-title">Зоны отдыха</h2>
+                    <h2 class="section-title">Наши преимущества</h2>
                 </div>
                 <div class="bento-grid">
                     <div class="bento-item large bento-featured">
@@ -160,6 +195,7 @@
                             <div class="bento-content-overlay">
                                 <h3>Парная на дровах</h3>
                                 <p>Классическая русская баня с мягким паром и ароматом свежей хвои для глубокого очищения.</p>
+                                <button class="btn-gallery" data-zone="wood">Смотреть фото</button>
                             </div>
                         </div>
                     </div>
@@ -171,6 +207,7 @@
                             <div class="bento-content-overlay">
                                 <h3>Ледяной бассейн</h3>
                                 <p>Бодрящая прохлада для укрепления иммунитета после жаркой парной.</p>
+                                <button class="btn-gallery" data-zone="pool">Смотреть фото</button>
                             </div>
                         </div>
                     </div>
@@ -182,6 +219,7 @@
                             <div class="bento-content-overlay">
                                 <h3>Зона Релакса</h3>
                                 <p>Уютное пространство с травяным чаем и мягкими лежаками для отдыха.</p>
+                                <button class="btn-gallery" data-zone="relax">Смотреть фото</button>
                             </div>
                         </div>
                     </div>
@@ -193,6 +231,7 @@
                             <div class="bento-content-overlay">
                                 <h3>SPA-ритуалы</h3>
                                 <p>Профессиональный массаж и уход за телом, возвращающие тонус и жизненную энергию в ритме Астаны.</p>
+                                <button class="btn-gallery" data-zone="spa">Смотреть фото</button>
                             </div>
                         </div>
                     </div>
@@ -204,7 +243,7 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">02</span>
-                    <h2 class="section-title">Услуги комплекса</h2>
+                    <h2 class="section-title">Варианты отдыха</h2>
                 </div>
 
                 <div class="rf-scene">
@@ -216,7 +255,8 @@
                             <span>Флагманская услуга</span>
                         </div>
                         <h3 class="rf-top-title">Общая баня</h3>
-                        <p class="rf-top-desc">Традиционная русская парная на дровах, просторная зона отдыха и настоящая атмосфера банного ритуала.</p>
+                        <p class="rf-top-desc">Погрузитесь в атмосферу подлинного банного братства. Традиционная парная на березовых дровах, ледяная купель и просторная зона для душевного отдыха.</p>
+                        <a href="#pricing" class="rf-btn">Подробнее</a>
                     </div>
 
                     <!-- OVERLAPPING CIRCLE (bridging top and bottom) -->
@@ -231,7 +271,8 @@
                                 <img src="https://api.iconify.design/ri:door-lock-line.svg?color=%236366f1" alt="">
                             </div>
                             <h3 class="rf-card-title">Семейные сауны</h3>
-                            <p class="rf-card-desc">Отдельные залы для комфортного семейного отдыха.</p>
+                            <p class="rf-card-desc">Ваше личное пространство для гармонии и уединения. Тематические залы, современный дизайн и уют для идеального отдыха.</p>
+                            <a href="#pricing" class="rf-btn">Подробнее</a>
                         </div>
 
                         <div class="rf-card rf-anim" style="--rf-d:0.25s">
@@ -239,7 +280,8 @@
                                 <img src="https://api.iconify.design/ri:hand-heart-line.svg?color=%236366f1" alt="">
                             </div>
                             <h3 class="rf-card-title">Массаж и пилинг</h3>
-                            <p class="rf-card-desc">SPA процедуры и банные ритуалы для глубокого расслабления.</p>
+                            <p class="rf-card-desc">Профессиональный уход от лучших мастеров. От классического парения до глубокого скрабирования — раскройте энергию вашего тела.</p>
+                            <a href="#menu" data-filter-trigger="spa" class="rf-btn">Подробнее</a>
                         </div>
                     </div>
 
@@ -452,64 +494,452 @@
             </div>
         </section>
 
-    <footer class="studio-footer" id="company">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="logo-circle footer-logo">
-                        <div class="logo-st">ST</div>
-                        <div class="logo-whisk">
-                            <img src="https://api.iconify.design/ri:leaf-fill.svg?color=%23d4af37" alt="Whisk">
-                        </div>
-                        <div class="logo-main-text">SPA TONUS</div>
-                        <div class="logo-divider"></div>
-                    </div>
-                    <p class="footer-tagline">Искусство истинного отдыха и восстановления сил в сердце столицы.</p>
+        <section class="section-menu" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">06</span>
+                    <h2 class="section-title">Бар и Кухня</h2>
                 </div>
 
-                <div class="footer-contacts">
-                    <h4 class="footer-label">Контакты</h4>
-                    <ul class="contact-list">
-                        <li>
-                            <a href="https://2gis.kz/astana/firm/70000001100926517?m=71.521358%2C51.133003%2F16" target="_blank" class="contact-item">
-                                <img src="https://api.iconify.design/ri:map-pin-2-fill.svg?color=%236366f1" alt="Location">
-                                <span>Улица Сарын, 58а<br><small>Юго-Восток, Сарайшык район, Астана</small></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:+77008883007" class="contact-item">
-                                <img src="https://api.iconify.design/ri:phone-fill.svg?color=%236366f1" alt="Phone">
-                                <span>+7 (700) 888-30-07</span>
-                            </a>
-                        </li>
+                <div class="menu-filters-wrapper">
+                    <button class="menu-scroll-btn left" aria-label="Scroll left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="menu-filters">
+                        <button class="menu-filter-btn active" data-filter="hot">Горячее & Супы</button>
+                        <button class="menu-filter-btn" data-filter="snacks">Закуски & Салаты</button>
+                        <button class="menu-filter-btn" data-filter="bakery">К чаю & Выпечка</button>
+                        <button class="menu-filter-btn" data-filter="drinks">Бар & Напитки</button>
+                        <button class="menu-filter-btn" data-filter="spa">SPA & Услуги</button>
+                        <button class="menu-filter-btn" data-filter="shop">Банные товары</button>
+                    </div>
+
+                    <button class="menu-scroll-btn right" aria-label="Scroll right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Category: Горячее & Супы -->
+                    <div class="menu-category" data-category="hot">
+                        <h3 class="menu-category-title">Первые блюда</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Пельмени домашние</span> <span class="menu-item-price">2500 ₸</span></li>
+                            <li><span class="menu-item-name">Шорпа</span> <span class="menu-item-price">2500 ₸</span></li>
+                            <li><span class="menu-item-name">Рамен с курицей</span> <span class="menu-item-price">2700 ₸</span></li>
+                            <li><span class="menu-item-name">Рамен говяжий</span> <span class="menu-item-price">3000 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="hot">
+                        <h3 class="menu-category-title">Вторые блюда</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Манты</span> <span class="menu-item-price">3000 ₸</span></li>
+                            <li><span class="menu-item-name">Картофель по-деревенски</span> <span class="menu-item-price">3500 ₸</span></li>
+                            <li><span class="menu-item-name">Казан кебаб</span> <span class="menu-item-price">4200 ₸</span></li>
+                            <li><span class="menu-item-name">Куырдак</span> <span class="menu-item-price">4000 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="hot">
+                        <h3 class="menu-category-title">Шашлыки</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Куриный шашлык</span> <span class="menu-item-price">2300 ₸</span></li>
+                            <li><span class="menu-item-name">Люля кебаб</span> <span class="menu-item-price">2300 ₸</span></li>
+                            <li><span class="menu-item-name">Баранина</span> <span class="menu-item-price">2500 ₸</span></li>
+                            <li><span class="menu-item-name">Утка</span> <span class="menu-item-price">2300 ₸</span></li>
+                            <li><span class="menu-item-name">Печень</span> <span class="menu-item-price">1800 ₸</span></li>
+                            <li><span class="menu-item-name">Филе</span> <span class="menu-item-price">2300 ₸</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menu-category" data-category="hot">
+                        <h3 class="menu-category-title">Блюда на заказ</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Казан кебаб (1 кг)</span> <span class="menu-item-price">14 000 ₸</span></li>
+                            <li><span class="menu-item-name">Плов (1 кг)</span> <span class="menu-item-price">13 000 ₸</span></li>
+                            <li><span class="menu-item-name">Домляма (1 кг)</span> <span class="menu-item-price">12 500 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: Закуски & Салаты -->
+                    <div class="menu-category" data-category="snacks">
+                        <h3 class="menu-category-title">Горячие закуски</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Пивные креветки</span> <span class="menu-item-price">4000 ₸</span></li>
+                            <li><span class="menu-item-name">Фри</span> <span class="menu-item-price">1500 ₸</span></li>
+                            <li><span class="menu-item-name">Жареные карасики</span> <span class="menu-item-price">2900 ₸</span></li>
+                            <li><span class="menu-item-name">Чесночные гренки</span> <span class="menu-item-price">1500 ₸</span></li>
+                            <li><span class="menu-item-name">Колбаски по-домашнему</span> <span class="menu-item-price">3500 ₸</span></li>
+                            <li><span class="menu-item-name">Наггетсы + фри</span> <span class="menu-item-price">3000 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="snacks">
+                        <h3 class="menu-category-title">Холодные закуски</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Домашняя квашеная капуста</span> <span class="menu-item-price">1800 ₸</span></li>
+                            <li><span class="menu-item-name">Разносол</span> <span class="menu-item-price">3000 ₸</span></li>
+                            <li><span class="menu-item-name">Кавказская закуска</span> <span class="menu-item-price">3000 ₸</span></li>
+                            <li><span class="menu-item-name">Русская закуска</span> <span class="menu-item-price">3000 ₸</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menu-category" data-category="snacks">
+                        <h3 class="menu-category-title">К пиву</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Арахис</span> <span class="menu-item-price">1190 ₸</span></li>
+                            <li><span class="menu-item-name">Чипсы</span> <span class="menu-item-price">1490 ₸</span></li>
+                            <li><span class="menu-item-name">Фисташки</span> <span class="menu-item-price">1490 ₸</span></li>
+                            <li><span class="menu-item-name">Чечил</span> <span class="menu-item-price">1590 ₸</span></li>
+                            <li><span class="menu-item-name">Кириешки</span> <span class="menu-item-price">990 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="snacks">
+                        <h3 class="menu-category-title">Пивная тарелка</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Сет S</span> <span class="menu-item-price">4500 ₸</span></li>
+                            <li><span class="menu-item-name">Сет M</span> <span class="menu-item-price">8490 ₸</span></li>
+                            <li><span class="menu-item-name">Сет L</span> <span class="menu-item-price">13990 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="snacks">
+                        <h3 class="menu-category-title">Салаты</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Ачичук</span> <span class="menu-item-price">2000 ₸</span></li>
+                            <li><span class="menu-item-name">Греческий</span> <span class="menu-item-price">2500 ₸</span></li>
+                            <li><span class="menu-item-name">Домашний</span> <span class="menu-item-price">2300 ₸</span></li>
+                            <li><span class="menu-item-name">Оливье</span> <span class="menu-item-price">2500 ₸</span></li>
+                            <li><span class="menu-item-name">Хрустящие баклажаны</span> <span class="menu-item-price">2800 ₸</span></li>
+                            <li><span class="menu-item-name">Цезарь с курицей</span> <span class="menu-item-price">3500 ₸</span></li>
+                            <li><span class="menu-item-name">Острый салат с телятиной</span> <span class="menu-item-price">3700 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: К чаю & Выпечка -->
+                    <div class="menu-category" data-category="bakery">
+                        <h3 class="menu-category-title">Десерты к чаю</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Лимон</span> <span class="menu-item-price">1000 ₸</span></li>
+                            <li><span class="menu-item-name">Шоколад</span> <span class="menu-item-price">1600 ₸</span></li>
+                            <li><span class="menu-item-name">Мёд</span> <span class="menu-item-price">1000 ₸</span></li>
+                            <li><span class="menu-item-name">Баурсаки (сметана, сгущенка)</span> <span class="menu-item-price">1600 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="bakery">
+                        <h3 class="menu-category-title">Выпечка</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Лаваш</span> <span class="menu-item-price">300 ₸</span></li>
+                            <li><span class="menu-item-name">Самса</span> <span class="menu-item-price">2200 ₸</span></li>
+                            <li><span class="menu-item-name">Хлебная корзина</span> <span class="menu-item-price">1300 ₸</span></li>
+                            <li><span class="menu-item-name">Лепешка</span> <span class="menu-item-price">500 ₸</span></li>
+                            <li><span class="menu-item-name">Чебуреки</span> <span class="menu-item-price">2990 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: Бар & Напитки -->
+                    <div class="menu-category" data-category="drinks">
+                        <h3 class="menu-category-title">Чай</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Ташкентский</span> <span class="menu-item-price">1900 ₸</span></li>
+                            <li><span class="menu-item-name">Марокканский</span> <span class="menu-item-price">1900 ₸</span></li>
+                            <li><span class="menu-item-name">Облепиховый</span> <span class="menu-item-price">1900 ₸</span></li>
+                            <li><span class="menu-item-name">Зеленый</span> <span class="menu-item-price">1200 ₸</span></li>
+                            <li><span class="menu-item-name">Черный</span> <span class="menu-item-price">1200 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="drinks">
+                        <h3 class="menu-category-title">Пиво</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Zatecky Gus 0.5</span> <span class="menu-item-price">1100 ₸</span></li>
+                            <li><span class="menu-item-name">Carlsberg 0.5</span> <span class="menu-item-price">1300 ₸</span></li>
+                            <li><span class="menu-item-name">Балтика 7 0.5</span> <span class="menu-item-price">990 ₸</span></li>
+                            <li><span class="menu-item-name">Miller 0.3</span> <span class="menu-item-price">1600 ₸</span></li>
+                            <li><span class="menu-item-name">Heineken 0.3</span> <span class="menu-item-price">1600 ₸</span></li>
+                            <li><span class="menu-item-name">Разливное 0.5</span> <span class="menu-item-price">900 ₸</span></li>
+                            <li><span class="menu-item-name">Кружка свежего</span> <span class="menu-item-price">1200 ₸</span></li>
+                            <li><span class="menu-item-name">Баня</span> <span class="menu-item-price">1400 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="drinks">
+                        <h3 class="menu-category-title">Напитки</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Вода</span> <span class="menu-item-price">890 ₸</span></li>
+                            <li><span class="menu-item-name">Red Bull</span> <span class="menu-item-price">1500 ₸</span></li>
+                            <li><span class="menu-item-name">Gorilla</span> <span class="menu-item-price">1100 ₸</span></li>
+                            <li><span class="menu-item-name">Dizzy</span> <span class="menu-item-price">990 ₸</span></li>
+                            <li><span class="menu-item-name">Лимонад 0.5</span> <span class="menu-item-price">1190 ₸</span></li>
+                            <li><span class="menu-item-name">Лимонад (асорти)</span> <span class="menu-item-price">1590 ₸</span></li>
+                            <li><span class="menu-item-name">Coca Cola / Fanta / Sprite 1л</span> <span class="menu-item-price">1190 ₸</span></li>
+                            <li><span class="menu-item-name">Боржоми</span> <span class="menu-item-price">1190 ₸</span></li>
+                            <li><span class="menu-item-name">Сок (ассортимент)</span> <span class="menu-item-price">1690 ₸</span></li>
+                            <li><span class="menu-item-name">Квас</span> <span class="menu-item-price">1490 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="drinks">
+                        <h3 class="menu-category-title">Алкоголь</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Martinasti (Вино)</span> <span class="menu-item-price">9900 ₸</span></li>
+                            <li><span class="menu-item-name">Lambrusco (Вино)</span> <span class="menu-item-price">5900 ₸</span></li>
+                            <li><span class="menu-item-name">Зерно (Водка)</span> <span class="menu-item-price">8900 ₸</span></li>
+                            <li><span class="menu-item-name">Absolut (Водка)</span> <span class="menu-item-price">15 000 ₸</span></li>
+                            <li><span class="menu-item-name">Grey Goose (Водка)</span> <span class="menu-item-price">14 990 ₸</span></li>
+                            <li><span class="menu-item-name">Коньяк Казахстан</span> <span class="menu-item-price">5900 ₸</span></li>
+                            <li><span class="menu-item-name">Арарат 3 звезды</span> <span class="menu-item-price">8900 ₸</span></li>
+                            <li><span class="menu-item-name">Jameson (Виски)</span> <span class="menu-item-price">24 000 ₸</span></li>
+                            <li><span class="menu-item-name">Jack Daniels (Виски)</span> <span class="menu-item-price">19 990 ₸</span></li>
+                            <li><span class="menu-item-name">И многое другое...</span> <span class="menu-item-price">Уточняйте</span></li>
+                        </ul>
+
+                        <!-- Legal Disclaimers for Alcohol - Moved here for category-specific display -->
+                        <div class="menu-legal">
+                            <p class="menu-disclaimer">Данное меню носит ознакомительный характер и не является рекламой.</p>
+                            <div class="menu-warning">
+                                <span class="warning-text">Алкогольная продукция продается только лицам старше 21 года.</span>
+                                <span class="warning-text">Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category: SPA & Услуги -->
+                    <div class="menu-category" data-category="spa">
+                        <h3 class="menu-category-title">Банные ритуалы</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Парение (в 2 захода)</span> <span class="menu-item-price">5000 ₸</span></li>
+                            <li><span class="menu-item-name">Пилинг</span> <span class="menu-item-price">4000 ₸</span></li>
+                            <li><span class="menu-item-name">Помывка</span> <span class="menu-item-price">3000 ₸</span></li>
+                            <li><span class="menu-item-name">Скрабирование</span> <span class="menu-item-price">4500 ₸</span></li>
+                            <li><span class="menu-item-name">3-х этапный уход (пилинг + помывка + скрабирование)</span> <span class="menu-item-price">10 000 ₸</span></li>
+                            <li><span class="menu-item-name">Уборка веника</span> <span class="menu-item-price">1500 ₸</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category" data-category="spa">
+                        <h3 class="menu-category-title">Массаж</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Классический массаж (60 мин)</span> <span class="menu-item-price">12 000 ₸</span></li>
+                            <li><span class="menu-item-name">Классический массаж (30 мин)</span> <span class="menu-item-price">7000 ₸</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-category" data-category="shop">
+                        <h3 class="menu-category-title">Товары на продажу & Аренда</h3>
+                        <ul class="menu-list">
+                            <li><span class="menu-item-name">Перчатки для пилинга</span> <span class="menu-item-price">1200 ₸</span></li>
+                            <li><span class="menu-item-name">Мочалка</span> <span class="menu-item-price">1500 ₸</span></li>
+                            <li><span class="menu-item-name">Шампунь / Гель для душа</span> <span class="menu-item-price">2500 ₸</span></li>
+                            <li><span class="menu-item-name">Бритвенный станок</span> <span class="menu-item-price">500 ₸</span></li>
+                            <li><span class="menu-item-name">Веник берез. / дубовый</span> <span class="menu-item-price">2990 ₸</span></li>
+                            <li><span class="menu-item-name">Масло пихтовое</span> <span class="menu-item-price">1500 ₸</span></li>
+                            <li><span class="menu-item-name">Халат аренда</span> <span class="menu-item-price">1500 ₸</span></li>
+                            <li><span class="menu-item-name">Полотенце / Простыня аренда</span> <span class="menu-item-price">1000 ₸</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Вопросы и ответы</h2>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Что нужно брать с собой для посещения?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Для вашего удобства мы предоставляем в аренду халаты, полотенца и простыни. Также в продаже имеются банные принадлежности (веники, масла, мочалки). С собой рекомендуется взять купальный костюм и резиновые тапочки.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Есть ли у вас охраняемая парковка?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Да, перед входом в комплекс Tonus расположена просторная и бесплатная парковка с видеонаблюдением для наших гостей.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Можно ли приходить со своей едой и напитками?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>У нас работает полноценная кухня и бар с широким ассортиментом блюд и напитков. Приносить свою еду и напитки в комплекс не разрешается в целях соблюдения санитарных норм.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Нужно ли бронировать посещение заранее?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Для общей бани бронирование не требуется. Однако для посещения семейных саун и VIP залов мы настоятельно рекомендуем бронировать время заранее по телефону или через WhatsApp, особенно в выходные и праздничные дни.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer class="studio-footer" id="company">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Links Columns -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#studio">Комплекс</a></li>
+                        <li><a href="#zones">Парные</a></li>
+                        <li><a href="#pricing">Тарифы</a></li>
+                        <li><a href="#menu">Кухня & Бар</a></li>
+                        <li><a href="#company">О нас</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="#pricing">Общая баня</a></li>
+                        <li><a href="#pricing">Семейные сауны</a></li>
+                        <li><a href="#pricing">VIP залы</a></li>
+                        <li><a href="#pricing">Массаж и SPA</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-social">
-                    <h4 class="footer-label">Мы в соцсетях</h4>
-                    <div class="footer-social-pills">
-                        <a href="https://www.instagram.com/tonus_astana" target="_blank" class="social-pill">
-                            <img src="https://api.iconify.design/ri:instagram-line.svg?color=%23333" alt="Instagram">
-                            <span>Instagram</span>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Правила посещения</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials Column (Icons + Right Aligned Info) -->
+                <div class="footer-col footer-contact-col">
+                    <div class="footer-socials-row">
+                        <a href="https://www.instagram.com/tonus_astana" target="_blank" class="social-circle" aria-label="Instagram">
+                            <img src="https://api.iconify.design/ri:instagram-line.svg?color=%23fff" alt="Inst">
                         </a>
-                        <a href="https://wa.me/77008883007?text=Здравствуйте!%20Хочу%20забронировать%20посещение%20в%20Tonus." target="_blank" class="social-pill">
-                            <img src="https://api.iconify.design/ri:whatsapp-line.svg?color=%23333" alt="WhatsApp">
-                            <span>WhatsApp</span>
+                        <a href="https://wa.me/77008883007?text=Здравствуйте!" target="_blank" class="social-circle" aria-label="WhatsApp">
+                            <img src="https://api.iconify.design/ri:whatsapp-line.svg?color=%23fff" alt="WA">
                         </a>
+                    </div>
+                    
+                    <div class="footer-contact-info">
+                        <div class="contact-line">
+                            <img src="https://api.iconify.design/ri:map-pin-2-fill.svg?color=%23fff" alt="Map">
+                            <span>Улица Сарын, 58а (Юго-Восток)<br>Астана, Казахстан</span>
+                        </div>
+                        <div class="contact-line">
+                            <img src="https://api.iconify.design/ri:phone-fill.svg?color=%23fff" alt="Phone">
+                            <a href="tel:+77008883007">+7 (700) 888 30 07</a>
+                        </div>
+                        <div class="contact-line">
+                            <img src="https://api.iconify.design/ri:time-line.svg?color=%23fff" alt="Time">
+                            <span>Работаем круглосуточно 24/7</span>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <p>&copy; 2026 TONUS Complex. Все права защищены.</p>
-                <a href="https://2gis.kz/astana/firm/70000001100926517?m=71.521358%2C51.133003%2F16" target="_blank" class="map-link">
-                    Смотреть на 2ГИС <span class="arrow">→</span>
-                </a>
+            <!-- Interactive Map -->
+            <div class="footer-map-container">
+                <div class="map-wrapper" id="2gis-map-container">
+                    <!-- 2GIS Interactive Widget -->
+                    <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+                    <script charset="utf-8">
+                        new DGWidgetLoader({
+                            "width": "100%",
+                            "height": "100%",
+                            "borderColor": "#1a1a1a",
+                            "pos": {
+                                "lat": 51.13327554134626,
+                                "lon": 71.52136087417604,
+                                "zoom": 15
+                            },
+                            "opt": {
+                                "city": "nur_sultan"
+                            },
+                            "org": [{
+                                "id": "70000001100926517"
+                            }]
+                        });
+                    </script>
+                    <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+                </div>
+                <div class="map-overlay-info">
+                    <h4 class="footer-heading">Как нас найти</h4>
+                    <p>Мы ждем вас в любое время суток</p>
+                    <a href="https://2gis.kz/astana/search/%D0%A1%D0%B0%D1%80%D1%8B%D0%BD%2C%2058%D0%B0" target="_blank" class="btn-pill btn-studio">Открыть в 2GIS</a>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="footer-bottom-bar">
+                <div class="fb-left">
+                    <span class="fb-brand">TONUS <small>©</small></span>
+                </div>
+                <div class="fb-center">
+                    <div class="fb-payments">
+                        <img src="https://api.iconify.design/logos:mastercard.svg" alt="Mastercard" class="pay-icon">
+                        <img src="https://api.iconify.design/logos:visa.svg" alt="Visa" class="pay-icon">
+                    </div>
+                </div>
+                <div class="fb-right">
+                    <span>SPA Complex Tonus. All rights reserved.</span>
+                    <a href="https://2gis.kz/astana/firm/70000001100926517" target="_blank" class="fb-link">Смотреть на 2ГИС →</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Mobile Sticky Booking -->
+    <a href="https://wa.me/77008883007?text=Здравствуйте!%20Хочу%20забронировать%20посещение%20в%20Tonus." target="_blank" class="mobile-sticky-booking">
+        <span>Забронировать сейчас</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+
     <script src="script.js"></script>
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Gallery Image">
+            <div class="modal-nav">
+                <button id="prevImg" class="modal-btn">&larr;</button>
+                <button id="nextImg" class="modal-btn">&rarr;</button>
+            </div>
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Вернуться наверх">
+        <img src="https://api.iconify.design/ri:arrow-up-line.svg?color=%23fff" alt="Top">
+    </button>
 </body>
 
 </html>
