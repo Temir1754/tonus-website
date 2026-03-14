@@ -993,6 +993,7 @@ section {
     }
 }
 
+
 /* Pricing Offers Banner */
 .pricing-offers { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 3rem; flex-wrap: wrap; }
 .offer-pill {
